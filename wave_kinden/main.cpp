@@ -260,7 +260,7 @@ UINT WINAPI TFunc(LPVOID thParam)
 	//色の指定
 	color1 = RGB(255, 255, 255);	//色指定（白）
 	color2 = RGB(0, 0, 0);	//色指定（黒）
-	color3 = RGB(0, 0, 255);	//色指定（青）
+	color3 = RGB(230, 160, 30);	//色指定（青）
 
 	//ペン・ブラシ生成
 	hBrush = CreateSolidBrush(color2);				//ブラシ生成
@@ -334,7 +334,7 @@ UINT WINAPI TFunc(LPVOID thParam)
 
 		//ファイルから読み取ったデータをウィンドウに合うよう調整
 		for (int i = 0; i < 4; i++){
-			data_plot[i] = (data[i + 1] * height[i] * 2) + height[i] / 2;
+			data_plot[i] = (data[i + 1] * height[i] * 0.9) + height[i] / 2;
 		}
 
 		//波形の描画

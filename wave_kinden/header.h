@@ -14,7 +14,7 @@ UINT WINAPI TFunc(LPVOID thParam);												//データ読み込み用スレッド
 //変数宣言
 #define DEF_APP_NAME	TEXT("Waveform Test")
 #define DEF_MUTEX_NAME	DEF_APP_NAME			//ミューテックス名
-#define DEF_DATAPERS 61.5	//1秒間に何データ入出力するか
+#define DEF_DATAPERS 1000	//1秒間に何データ入出力するか
 #define DATA_MAX 3010 //データの最大個数
 #define N 5 //データを読み込みファイルの1行の文字数
 
